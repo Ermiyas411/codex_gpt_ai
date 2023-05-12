@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  *::-webkit-scrollbar {
+    background: #12141e;
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff1f0f, #ff870f);
+    border-radius: 50px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background: #242535;
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  
+  .chat_area {
+    height: 90vh;
+    width: 100%;
+  }
+  
+  .chat {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat .profile {
+    margin-right: 40px;
+  }
+  
+  .chat.user .profile {
+    background: linear-gradient(45deg, #ff1f0f, #ffea00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat.bot .profile {
+    background: linear-gradient(45deg, #0800ff, #0ff3ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat.user {
+    padding: 20px 150px;
+    width: 100%;
+    width: 100%;
+    background: #c5c5c50d;
+    text-align: justify;
+  }
+  
+  .chat.bot {
+    text-align: justify;
+    padding: 20px 150px;
+    width: 100%;
+    width: 100%;
+    background: #ffffff35;
+  }
+  
+  .chat_space{
+    height: 150px;
+  }
+  
+  .chat_container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 160px;
+    background: #00000099;
+  }
+  
+  textarea {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 12px;
+    font-size: 15px;
+    background: #c5c5c521;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button {
+    background: #c5c5c521;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 720px) {
+    form {
+      padding: 20px 10px;
+    }
+  
+    .chat .profile {
+      margin-right: 20px;
+    }
+  
+    .chat.user,
+    .chat.bot {
+      padding: 20px 20px;
+    }
+  }
